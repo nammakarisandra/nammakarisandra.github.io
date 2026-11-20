@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ward Team Console</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#E86A10">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    body { padding-bottom: 16px; }
+    .wrap { max-width: 1100px; }
+    .tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .issue { display: grid; gap: 8px; }
+    .issue .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 8px; }
+    .issue img { max-height: 120px; border-radius: 8px; }
+    .pii { background: var(--brand-soft); padding: 6px 10px; border-radius: 8px; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a href="./" class="brand"><img src="icons/icon.svg" alt="" width="28" height="28"><span>Ward Team Console</span></a>
+    <div class="top-actions"><select id="ward" aria-label="Ward"></select></div>
+  </header>
+  <main class="wrap">
+    <section id="login" class="card form">
+      <h2>Sign in</h2>
+      <label>Admin key<input id="key" type="password" autocomplete="current-password"></label>
+      <button class="btn primary" id="loginBtn">Open console</button>
+      <p class="muted small" id="keyHint">The key is set on the server with the ADMIN_KEY environment variable.</p>
+    </section>
+    <section id="app" hidden>
+      <div class="tabs">
+        <button class="pill on" data-tab="issues">Complaints</button>
+        <button class="pill" data-tab="updates">Post update</button>
+        <button class="pill" data-tab="meetings">Add meeting</button>
+        <button class="pill" data-tab="projects">Add verified work</button>
+        <a class="pill" id="csv" href="#">Export CSV</a>
+        <button class="pill" id="logout">Sign out</button>
+      </div>
+      <div id="pane"></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" hidden role="status"></div>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

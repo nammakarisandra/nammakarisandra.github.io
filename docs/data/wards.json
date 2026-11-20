@@ -1,0 +1,82 @@
+{
+  "app": {
+    "name": "Namma Ward",
+    "shortName": "Namma Ward",
+    "themeColor": "#E86A10",
+    "organisation": "Ward Civic Outreach Team",
+    "partyLogo": "icons/party-logo.png",
+    "partyName": { "en": "Bharatiya Janata Party, Karnataka", "kn": "ಭಾರತೀಯ ಜನತಾ ಪಕ್ಷ, ಕರ್ನಾಟಕ" }
+  },
+  "categories": [
+    { "id": "roads", "icon": "🛣️", "en": "Roads & potholes", "kn": "ರಸ್ತೆ ಮತ್ತು ಗುಂಡಿಗಳು", "agency": "gba" },
+    { "id": "drainage", "icon": "🌧️", "en": "Drainage & flooding", "kn": "ಚರಂಡಿ ಮತ್ತು ನೀರು ನಿಲ್ಲುವಿಕೆ", "agency": "gba" },
+    { "id": "water", "icon": "🚰", "en": "Water supply", "kn": "ನೀರು ಸರಬರಾಜು", "agency": "bwssb" },
+    { "id": "streetlight", "icon": "💡", "en": "Street lighting", "kn": "ಬೀದಿ ದೀಪ", "agency": "bescom" },
+    { "id": "garbage", "icon": "🗑️", "en": "Garbage & black spots", "kn": "ಕಸ ಮತ್ತು ಕಸದ ತಾಣಗಳು", "agency": "swm" },
+    { "id": "footpath", "icon": "🚶", "en": "Footpaths", "kn": "ಪಾದಚಾರಿ ಮಾರ್ಗ", "agency": "gba" },
+    { "id": "parking", "icon": "🚗", "en": "Parking & congestion", "kn": "ವಾಹನ ನಿಲುಗಡೆ ಮತ್ತು ದಟ್ಟಣೆ", "agency": "police" },
+    { "id": "safety", "icon": "🛡️", "en": "Public safety", "kn": "ಸಾರ್ವಜನಿಕ ಸುರಕ್ಷತೆ", "agency": "police" },
+    { "id": "other", "icon": "📌", "en": "Other civic issue", "kn": "ಇತರ ನಾಗರಿಕ ಸಮಸ್ಯೆ", "agency": "gba" }
+  ],
+  "agencies": [
+    { "id": "gba", "en": "GBA / City Corporation", "kn": "ಜಿಬಿಎ / ನಗರ ಪಾಲಿಕೆ" },
+    { "id": "bwssb", "en": "BWSSB (Water & Sewerage)", "kn": "ಬಿಡಬ್ಲ್ಯೂಎಸ್‌ಎಸ್‌ಬಿ (ನೀರು ಮತ್ತು ಒಳಚರಂಡಿ)" },
+    { "id": "bescom", "en": "BESCOM (Electricity)", "kn": "ಬೆಸ್ಕಾಂ (ವಿದ್ಯುತ್)" },
+    { "id": "swm", "en": "Solid Waste Management", "kn": "ಘನತ್ಯಾಜ್ಯ ನಿರ್ವಹಣೆ" },
+    { "id": "police", "en": "Traffic / Local Police", "kn": "ಸಂಚಾರ / ಸ್ಥಳೀಯ ಪೊಲೀಸ್" },
+    { "id": "other", "en": "Other authority", "kn": "ಇತರ ಪ್ರಾಧಿಕಾರ" }
+  ],
+  "wards": [
+    {
+      "id": "karisandra",
+      "code": "KRS",
+      "en": "Karisandra",
+      "kn": "ಕರಿಸಂದ್ರ",
+      "oldWardNo": "166",
+      "assembly": { "en": "Padmanabhanagar (AC 171)", "kn": "ಪದ್ಮನಾಭನಗರ (ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ 171)" },
+      "mla": { "en": "R. Ashoka", "kn": "ಆರ್. ಅಶೋಕ", "photo": "icons/mla-karisandra.jpg" },
+      "center": [12.9255, 77.5735],
+      "zoom": 15,
+      "baseline": {
+        "households": 6492,
+        "population": 27040,
+        "voters": 21925,
+        "source": "Janaagraha Ward Budget Brief 2017-18 (old ward boundaries)"
+      },
+      "zones": [
+        { "id": "z1", "en": "Zone 1 - Karisandra Main", "kn": "ವಲಯ 1 - ಕರಿಸಂದ್ರ ಮುಖ್ಯ" },
+        { "id": "z2", "en": "Zone 2 - Kaveri Nagar", "kn": "ವಲಯ 2 - ಕಾವೇರಿ ನಗರ" },
+        { "id": "z3", "en": "Zone 3 - Bapuji Nagar", "kn": "ವಲಯ 3 - ಬಾಪೂಜಿ ನಗರ" },
+        { "id": "z4", "en": "Zone 4 - Ambedkar Nagar", "kn": "ವಲಯ 4 - ಅಂಬೇಡ್ಕರ್ ನಗರ" },
+        { "id": "z5", "en": "Zone 5 - Other streets", "kn": "ವಲಯ 5 - ಇತರ ಬೀದಿಗಳು" }
+      ],
+      "services": [
+        { "en": "Emergency (Police / Fire / Ambulance)", "kn": "ತುರ್ತು (ಪೊಲೀಸ್ / ಅಗ್ನಿಶಾಮಕ / ಆಂಬ್ಯುಲೆನ್ಸ್)", "phone": "112" },
+        { "en": "Ambulance", "kn": "ಆಂಬ್ಯುಲೆನ್ಸ್", "phone": "108" },
+        { "en": "City Corporation helpline (verify current GBA number)", "kn": "ನಗರ ಪಾಲಿಕೆ ಸಹಾಯವಾಣಿ (ಪ್ರಸ್ತುತ ಸಂಖ್ಯೆ ಪರಿಶೀಲಿಸಿ)", "phone": "1533" },
+        { "en": "BWSSB water helpline", "kn": "ಬಿಡಬ್ಲ್ಯೂಎಸ್‌ಎಸ್‌ಬಿ ನೀರಿನ ಸಹಾಯವಾಣಿ", "phone": "1916" },
+        { "en": "BESCOM power helpline", "kn": "ಬೆಸ್ಕಾಂ ವಿದ್ಯುತ್ ಸಹಾಯವಾಣಿ", "phone": "1912" },
+        { "en": "Women helpline", "kn": "ಮಹಿಳಾ ಸಹಾಯವಾಣಿ", "phone": "181" },
+        { "en": "Senior citizens helpline", "kn": "ಹಿರಿಯ ನಾಗರಿಕರ ಸಹಾಯವಾಣಿ", "phone": "14567" }
+      ]
+    },
+    {
+      "id": "sample-ward",
+      "code": "SMP",
+      "en": "Sample Ward (copy and edit)",
+      "kn": "ಮಾದರಿ ವಾರ್ಡ್",
+      "oldWardNo": "",
+      "assembly": { "en": "Set the assembly constituency", "kn": "ವಿಧಾನಸಭಾ ಕ್ಷೇತ್ರ ಸೇರಿಸಿ" },
+      "center": [12.9716, 77.5946],
+      "zoom": 14,
+      "baseline": null,
+      "zones": [
+        { "id": "z1", "en": "Zone 1", "kn": "ವಲಯ 1" },
+        { "id": "z2", "en": "Zone 2", "kn": "ವಲಯ 2" }
+      ],
+      "services": [
+        { "en": "Emergency", "kn": "ತುರ್ತು", "phone": "112" }
+      ]
+    }
+  ]
+}

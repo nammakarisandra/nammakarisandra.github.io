@@ -3,3 +3,4 @@ data/db.json
 data/db.json.tmp
 data/uploads/
 .env
+.claude/

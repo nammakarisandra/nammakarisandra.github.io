@@ -35,6 +35,27 @@ automatically when the phone is back online. Re-sends never create duplicate tic
 - Public map and tracker show locations rounded to about 100 m.
 - Volunteer street-audit entries are tagged `volunteer` so audit coverage can be measured.
 
+## Free demo on GitHub Pages (no server)
+
+The `docs/` folder is a copy of the app that runs with no server. It opens with sample
+complaints, updates and works, and anything a visitor enters stays in their own browser,
+so each phone sees only its own data. The team console key in the demo is `demo`.
+
+1. Run `node build-demo.js` after any change (it rebuilds `docs/`), then commit and push.
+2. On GitHub open the repository, then **Settings**, then **Pages**.
+3. Under **Build and deployment**, set **Source** to **Deploy from a branch**, **Branch** to
+   `main` and the folder to `/docs`, then click **Save**.
+4. After about a minute the link appears at the top of that page:
+   `https://<username>.github.io/<repository>/` (team console: add `admin.html`).
+
+## Logo and MLA photo
+
+- Party logo: `public/icons/party-logo.png`
+- MLA photo: `public/icons/mla-karisandra.jpg` (square crop works best; the app shows it
+  as a circle). The file name is set by `mla.photo` in `data/wards.json`.
+
+If a file is missing, the app simply leaves that picture out.
+
 ## Run it
 
 Needs Node.js 18 or newer. No packages to install.
